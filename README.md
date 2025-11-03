@@ -8,4 +8,4 @@ Proyek ini berisi website destinasi wisata di Sumedang.
 
 ---
 
-### [Lihat Website Online di sini](https://ginavioamelina.github.io/TugasHTML_Gina/)
+### Lihat Website Online di sini(https://ginavioamelina.github.io/TugasHTML_Gina/index.html)
