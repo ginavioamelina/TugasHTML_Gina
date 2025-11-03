@@ -9,3 +9,318 @@ Proyek ini berisi website destinasi wisata di Sumedang.
 ---
 
 ### [Lihat Website Online di sini](https://ginavioamelina.github.io/TugasHTML_Gina/index.html)
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jelajah Pesona Sumedang: Keindahan Alam dan Sejarah</title>
+    
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">SumedangPisan</div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#destinasi-alam">Alam</a></li>
+                    <li><a href="#sejarah-budaya">Sejarah & Budaya</a></li>
+                    <li><a href="#kuliner-khas">Kuliner</a></li>
+                    <li><a href="#pusat-informasi">Kafe</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle Navigation">
+                <i class="fas fa-bars"></i> 
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Jelajah Pesona Sumedang: Keindahan Alam dan Sejarah</h1>
+                <p class="slogan">Temukan Warisan Budaya Sunda dan Destinasi Alam Tersembunyi di Parahyangan.</p>
+                <a href="#destinasi-alam" class="cta-button">Eksplorasi Destinasi Unggulan</a>
+            </div>
+        </section>
+
+        <section id="destinasi-alam" class="destinasi-section">
+            <div class="container">
+                <h2>Pesona Alam Sumedang yang Memukau</h2>
+                <div class="destinasi-grid">
+                    
+                    <article class="kartu-wisata"
+                        data-title="Kampung Toga"
+                        data-hours="Setiap Hari: 09.00 - 22.00 WIB"
+                        data-description="Nikmati pemandangan kota Sumedang dari ketinggian, cocok untuk rekreasi keluarga. Area ini menawarkan berbagai fasilitas seperti kolam renang, penginapan, dan restoran dengan view terbaik."
+                        data-images="toga1.jpeg , toga2.jpeg , toga3.jpeg">
+                        <img src="togahills.jpeg" alt="Kampung Toga Sumedang">
+                        <div class="kartu-content">
+                            <h3>Kampung Toga</h3>
+                            <p>Nikmati pemandangan kota Sumedang dari ketinggian, cocok untuk rekreasi keluarga.</p>
+                            <a href="#" class="detail-link">Lihat Detail <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="kartu-wisata"
+                        data-title="Tanjung Duriat"
+                        data-hours="Setiap Hari: 08.00 - 17.00 WIB"
+                        data-description="Destinasi favorit dengan pemandangan Bendungan Jatigede yang indah dan menawan. Terdapat gardu pandang unik untuk berswafoto dan menikmati panorama air yang luas."
+                        data-images="duriat1.jpeg,duriat2.jpeg,duriat3.jpeg">
+                        <img src="tanjungduriat2.jpeg" alt="Tanjung Duriat">
+                        <div class="kartu-content">
+                            <h3>Tanjung Duriat</h3>
+                            <p>Pemandangan indah Bendungan Jati Gede Sumedang.</p>
+                            <a href="#" class="detail-link">Lihat Detail <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="kartu-wisata"
+                        data-title="Curug Cigorobog"
+                        data-hours="Senin - Minggu: 08.00 - 16.00 WIB"
+                        data-description="Air terjun dengan ketinggian sekitar 30 meter. Suasana di sini sangat sejuk dan asri, cocok untuk healing dan menikmati kesegaran alam yang masih murni."
+                        data-images="g1.jpeg, ,g2.jpeg , g3.jpeg" >
+                        <img src="curugcigorobog.jpeg" alt="Curug Cigorobog Sumedang">
+                        <div class="kartu-content">
+                            <h3>Curug Cigorobog</h3>
+                            <p>Destinasi Air terjun dan pemandangan yang menakjubkan.</p>
+                            <a href="#" class="detail-link">Lihat Detail <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    
+
+                    <article class="kartu-wisata"
+                        data-title="Kujang Sapasang"
+                        data-hours="Setiap Hari: 09.00 - 17.00 WIB"
+                        data-description="Salah satu ikon wisata baru di Kabupaten Sumedang, menawarkan spot foto unik dengan latar belakang bentukan kujang besar dan panorama yang indah."
+                        data-images="k1.jpeg, k2.jpeg, k3.jpeg">
+                        <img src="k3.jpeg" alt="Kujang Sapasang">
+                        <div class="kartu-content">
+                            <h3>Kujang Sapasang</h3>
+                            <p> salah satu ikon wisata baru di Kabupaten Sumedang dan Jawa Barat.</p>
+                            <a href="#" class="detail-link">Lihat Detail <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="kartu-wisata"
+                        data-title="Sangiang Camp"
+                        data-hours="Setiap Hari: 06.00 - 18.00 WIB"
+                        data-description="Tempat berkemah yang disuguhkan pemandangan sangat luar biasa, terutama saat malam hari dan sunrise. Cocok untuk pecinta alam dan kegiatan outdoor."
+                        data-images="sangiang-camp1.jpeg, sangiang-camp-view.jpeg, sangiang-camp-tent.jpeg">
+                        <img src="sangiangcamp.jpg" alt="Sangiang Camp">
+                        <div class="kartu-content">
+                            <h3>Sangiang Camp</h3>
+                            <p>Tempat Camp yang di suguhkan pemandangan yang sangat luar biasa.</p>
+                            <a href="#" class="detail-link">Lihat Detail <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    
+                    <article class="kartu-wisata"
+                        data-title="Gunung Tampomas"
+                        data-hours="Setiap Hari: 05.00 - 18.00 WIB"
+                        data-description="Gunung berapi tidak aktif yang populer untuk pendakian, menawarkan jalur yang menantang dan hutan yang lebat. Puncak Sangiang Taraje adalah tujuan utamanya."
+                        data-images="tampomas-puncak.jpeg, tampomas-hutan.jpeg">
+                        <img src="tampomas.jpeg" alt="gunung Tampomas">
+                        <div class="kartu-content">
+                            <h3>Gunung Tampomas</h3>
+                            <p>Gunung berapi tidak aktif yang populer untuk pendakian, menawarkan jalur yang menantang.</p>
+                            <a href="#" class="detail-link">Lihat Detail <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="kartu-wisata"
+                        data-title="Jans Park (Jatinangor National Park)"
+                        data-hours="Setiap Hari: 08.00 - 17.00 WIB"
+                        data-description="Tempat wisata alam dan rekreasi di Jatinangor dengan tema 'negeri dongeng' dan banyak spot foto instagramable. Tempat ini memiliki koleksi bunga yang luas dan bangunan unik bergaya istana."
+                        data-images="janspark-view.jpeg, janspark-spot.jpeg, janspark-castle.jpeg">
+                        <img src="janspark.jpg" alt="Jans Park">
+                        <div class="kartu-content">
+                            <h3>Jans Park</h3>
+                            <p>Tempat wisata alam dan rekreasi bertema negeri dongeng dengan banyak spot foto instagramable.</p>
+                            <a href="#" class="detail-link">Lihat Detail <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="kartu-wisata"
+                        data-title="Kampoeng Ci Herang"
+                        data-hours="Setiap Hari: 08.00 - 17.00 WIB"
+                        data-description="Panorama alam hutan pinus yang terjaga keasriannya dengan kesegaran udaranya. Cocok untuk piknik keluarga dan menikmati ketenangan hutan."
+                        data-images="ciherang-pinus.jpeg, ciherang-river.jpeg">
+                        <img src="ciherang.jpg" alt="Kampoeng Ci Herang">
+                        <div class="kartu-content">
+                            <h3>Kampoeng Ci Herang</h3>
+                            <p>Panorama alam hutan pinus yang terjaga keasriannya dengan kesegaran udaranya.</p>
+                            <a href="#" class="detail-link">Lihat Detail <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    
+                    <article class="kartu-wisata"
+                        data-title="Tahura Gunung Kunci"
+                        data-hours="Setiap Hari: 08.00 - 17.00 WIB"
+                        data-description="Gunung Kunci menyimpan nilai historis yang panjang karena terdapat benteng pertahanan Belanda. Merupakan bukit kecil di dekat alun-alun, cocok untuk jogging dan wisata sejarah ringan."
+                        data-images="gkunci-benteng.jpeg, gkunci-view.jpeg">
+                        <img src="gkunci.jpg" alt="Tahura Gunung Kunci">
+                        <div class="kartu-content">
+                            <h3>Tahura Gunung Kunci</h3>
+                            <p>Gunung Kunci sendiri menyimpan nilai historis yang panjang. Disini didirikan benteng pertahanan Belanda.</p>
+                            <a href="#" class="detail-link">Lihat Detail <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="sejarah-budaya" class="sejarah-budaya-section">
+            <div class="container">
+                <h2>Jejak Megah Sejarah dan Budaya Sumedang</h2>
+                <div class="sejarah-content">
+                    <img src="museum1.jpeg" alt="Museum Prabu Geusan Ulun">
+                    <div class="text-content">
+                        <h3>Museum Prabu Geusan Ulun</h3>
+                        <p>Telusuri koleksi artefak berharga dari masa Kerajaan Sumedang Larang yang kaya akan sejarah. Pelajari lebih dalam tentang warisan budaya Sunda yang tak ternilai.</p>
+                        
+                        <button id="open-museum-gallery" class="cta-sejarah">
+                            Lihat Galeri Foto Museum <i class="fas fa-images"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="kuliner-khas" class="destinasi-section" style="background-color: #fdfdfd;">
+            <div class="container">
+                <h2>Rekomendasi Tahu Sumedang Legendaris</h2>
+                <div class="destinasi-grid">
+                    
+                    <article class="kartu-wisata">
+                        <img src="bungkeng.jpg" alt="Tahu Bungkeng 1917">
+                        <div class="kartu-content">
+                            <h3>Tahu Bungkeng 1917</h3>
+                            <p>Dianggap sebagai pelopor tahu Sumedang, tempat ini wajib dikunjungi. Menawarkan tahu yang baru digoreng dan varian tahu dengan nori, renyah di luar dan lembut di dalam.</p>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Jl. Sebelas April No. 53, Kotakaler, Kec. Sumedang Utara.</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="kartu-wisata">
+                        <img src="palasari.jpg" alt="Tahu Palasari">
+                        <div class="kartu-content">
+                            <h3>Tahu Palasari</h3>
+                            <p>Pusat oleh-oleh tahu yang sangat terkenal. Selain tahu goreng, Anda juga bisa membeli tahu mentah, opak, dan oleh-oleh khas Sumedang lainnya.</p>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Jl. Mayor Abdurahman No. 153, Kotakaler, Kec. Sumedang Utara.</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+        
+        <section id="pusat-informasi" class="destinasi-section">
+            <div class="container">
+                <h2>Kafe & Tempat Santai Terbaru di Sumedang</h2>
+                <div class="destinasi-grid">
+
+                    <article class="kartu-wisata">
+                        <img src="kausa.jpg" alt="Kausa Space">
+                        <div class="kartu-content">
+                            <h3>Kausa Space</h3>
+                            <p>Tempat ngopi estetis di pusat kota. Populer dengan suasananya yang adem dan arsitektur yang unik buat foto-foto.</p>
+                            <div class="info-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Setiap Hari: 07.00 - 23.00 WIB</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Jl. Prabu Geusan Ulun No.66, Regol Wetan, Kec. Sumedang Selatan.</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fab fa-instagram"></i>
+                                <span>@Kausaspace</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="kartu-wisata">
+                        <img src="brontak.jpg" alt="Kopibrontak">
+                        <div class="kartu-content">
+                            <h3>Kopibrontak</h3>
+                            <p>Kafe hits yang terkenal dengan kopi enak dan nuansa pedesaan, interior instagramable Tempat asyik buat nongkrong bareng teman-teman.</p>
+                            <div class="info-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Hari Minggu - Senin : 11.00 - 23.00 WIB</span>
+                                <span>Hari Sabtu : 13.00 - 23.00 WIB</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Jl.Giriharja, Kebonjati, Kec. Sumedang Utara.</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fab fa-instagram"></i>
+                                <span>@Kopibrontak</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="kontak" class="main-footer">
+        <div class="container">
+            <p>Kontak Kami: Kantor Dinas Pariwisata Sumedang | info@sumedangwisata.id</p>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; 2025 Jelajah Pesona Sumedang. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <div id="museum-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button id="close-museum-gallery" class="modal-close">&times;</button>
+            <h2>Galeri Museum Prabu Geusan Ulun</h2>
+            <div class="gallery-grid">
+                <img src="mahkota.jpeg" alt="Mahkota Binokasih">
+                <img src="gamelan.jpeg" alt="Gamelan Pusaka">
+                <img src="senjata.jpeg" alt="Senjata Pusaka">
+                <img src="kereta.jpeg" alt="Kereta Kencana">
+                <img src="image_bdba2d.jpg" alt="Foto Tambahan Museum">
+            </div>
+            <p>Ini adalah beberapa koleksi pusaka peninggalan Kerajaan Sumedang Larang yang tersimpan di museum.</p>
+        </div>
+    </div>
+    
+    <div id="detail-destinasi-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button id="close-detail-modal" class="modal-close">&times;</button> 
+            <h2 id="modal-title"></h2>
+            <div class="info-modal-group">
+                <p><strong><i class="fas fa-clock"></i> Jam Operasional:</strong> <span id="modal-hours"></span></p>
+            </div>
+            <hr>
+            <p id="modal-description"></p>
+            
+            <h3>Galeri Foto</h3>
+            <div class="gallery-grid" id="modal-gallery"> 
+                </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
