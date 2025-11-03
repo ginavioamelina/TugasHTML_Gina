@@ -1,0 +1,276 @@
+/* ========== Global Style ========== */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  background-color: #f8f9fb;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+  font-family: "Playfair Display", serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ========== Header ========== */
+.main-header {
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.main-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #003366;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.main-nav a {
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.main-nav a:hover {
+  color: #0055aa;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+}
+
+/* ========== Hero Section ========== */
+.hero {
+  background: url('bg2.jpeg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 7rem 1rem;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.cta-button {
+  background: #0055aa;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: #003f82;
+}
+
+/* ========== Section Style ========== */
+.destinasi-section {
+  padding: 4rem 0;
+}
+
+.destinasi-section h2 {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 2rem;
+}
+
+.destinasi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* ========== Section Style (Kartu Wisata) ========== */
+.kartu-wisata img {
+  width: 100%;
+  height: 200px;
+  /* Ganti dari 'cover' menjadi 'contain' */
+  object-fit: contain; 
+  /* Tambahkan background agar terlihat jelas jika ada spasi */
+  background-color: #f0f0f0; 
+}
+
+.kartu-wisata:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.kartu-wisata img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.kartu-content {
+  padding: 1rem;
+}
+
+.kartu-content h3 {
+  color: #003366;
+  margin-bottom: 0.5rem;
+}
+
+.detail-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #0055aa;
+  font-weight: 600;
+}
+
+/* ========== Sejarah ========== */
+.sejarah-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.sejarah-content img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.text-content {
+  flex: 1;
+}
+
+.cta-sejarah {
+  background: #0055aa;
+  color: #fff;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cta-sejarah:hover {
+  background: #003f82;
+}
+
+/* ========== Modal ========== */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 800px;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* ========== Footer ========== */
+.main-footer {
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+}
+
+.social-media a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.2rem;
+}
+
+.social-media a:hover {
+  color: #66b3ff;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 768px) {
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+  }
+
+  .main-nav.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    color: #003366;
+  }
+
+  .sejarah-content {
+    flex-direction: column;
+  }
+}
